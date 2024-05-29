@@ -3,7 +3,7 @@ Here are all the equations related to Sugeno and Choquet comparative models, emp
 Furthermore, the equations provide a quantitative framework for evaluating the effectiveness and performance of each model in various time scenarios. They provide a systematic way of understanding how variations in time windows impact the weighting of various mathematical models, providing valuable insights into their adaptability and robustness. These equations help ensure the transparency and replicability of the analyses performed by detailing each step of the analytical process, from data collection to model application. By using them, it's possible to thoroughly compare the Sugeno and Choquet models and determine their advantages and disadvantages in different usage contexts. Finally, the equations are essential for the theoretical grounding and practical application of this work, as they serve as the basis for researching and interpreting the results.
 
 
-# T-norms
+# I - T-norms
 
 ## Minimum  
 <p align="center">$TM (x, y) = \min\{x, y\}$ </p>
@@ -23,27 +23,55 @@ $$
   \end{cases}
 \$$
 
-### Overlap functions
-| Name/Reference  | Definition |
-| ------------- | ------------- |
-| (nome)  | OB (x, y) = min{x√y, y√x} |
-| Cuadras-Augé copula   | OmM (x, y) = min{x, y} max{x2, y2}  |
-| (nome) |  Oα (x, y) = xy(1 + α(1 − x)(1 − y)),  α ∈ [−1, 0[ ∪ ]0, 1] |
-| (nome) | 
-| Geometric Mean |
-| Harmonic Mean |
-| Sine |
+# II - Overlap functions
+## OB (x,y)
+<p align="center">$OB (x, y) = \min\{ x\sqrt{y}, y\sqrt{x}\}$ </p>
 
-### Copulas that are neither t-norms nor overlap functions
-| Name/Reference  | Definition |
-| ------------- | ------------- |
-| FGL  |   |
-| FBPC  |  |
+## Cuadras-Augé copula
+<p align="center">$OmM (x, y) =  \min\{x,y\}\max\{x^2,y^2	\}$ </p>
+
+## Oα (x, y)
+<p align="center">$Oα (x, y) = xy(1 + α(1 − x)(1 − y)),  α ∈ [-1,1]$ </p>
+
+## ODiv (x, y)
+<p align="center">$ODiv (x, y) = \frac{{xy + \min\{x,y\}}}{{2}}$ </p>
+
+## Geometric Mean
+<p align="center">$GM (x, y) = \sqrt{xy}$ </p>
+
+## Harmonic Mean
+$$
+\ THP (x, y) =
+  \begin{cases}
+    0       & \quad \text{if x = y = 0} \\
+    \frac{{2}}{{ \frac{{1}}{{x}} +  \frac{{1}}{{y}}}}  & \quad \text{otherwise} 
+  \end{cases}
+\$$
+
+## Sine
+<p align="center">$Sine (x, y) = \frac{{\pi}}{{2}}(xy)^\frac{{1}}{{4}}$ </p>
+
+## ORS
+- Verificar essa aqui
 
 
+#  III - Copulas that are neither t-norms nor overlap functions
+## CF (x, y)
+<p align="center">$CF (x, y) = xy + x^2y(1-x)(1-y)$ </p>
+
+## CL (x, y)
+<p align="center">$CL (x, y) = \max\{\min\{x,\frac{{y}}{{2}}\},x+y+1\}$ </p>
+
+
+# IV - Aggregation functions other than (I)-(III)
+
+## FGL (x, y)
+
+## FBPC (x, y)
 
 ### Left 0-absorbent (0, 1)-pre-aggregation functions
-| Name/Reference  | Definition |
-| ------------- | ------------- |
-| FNA  |   |
-| FNA2 |  |
+## FNA (x, y)
+
+## FNA2 (x, y)
+
+
