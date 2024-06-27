@@ -52,8 +52,7 @@ $$
 <p align="center">$Sine (x, y) = \frac{{\pi}}{{2}}(xy)^\frac{{1}}{{4}}$ </p>
 
 ## ORS
-- Verificar essa aqui
-
+<p align="center">$ORS (x, y) = \min\{ \frac{{(x+1) \sqrt{y}}}{{2}}, y\sqrt{x}\}$ </p>
 
 #  III - Copulas that are neither t-norms nor overlap functions
 ## CF (x, y)
@@ -66,12 +65,29 @@ $$
 # IV - Aggregation functions other than (I)-(III)
 
 ## FGL (x, y)
+<p align="center">$FGL (x, y) = \sqrt{ \frac{{x(y+1)}}{{2}}}$ </p>
 
 ## FBPC (x, y)
+<p align="center">$FBPC (x, y) = xy^2$ </p>
 
-### Left 0-absorbent (0, 1)-pre-aggregation functions
+# V - Left 0-absorbent (0, 1)-pre-aggregation functions
 ## FNA (x, y)
+$$
+\ FNA (x, y) =
+  \begin{cases}
+    x       & \quad \text{if x ≤ y} \\
+    \min\{(x, y)}  & \quad \text{otherwise} 
+  \end{cases}
+\$$
 
 ## FNA2 (x, y)
 
 
+$$
+\ FNA (x, y) =
+  \begin{cases}
+    x       & \quad \text{if x ≤ y} \\
+    \frac{{x(y+1)}}{{2}} & \quad \text{0 < x ≤ y} \\
+    \min\{(x, y)}  & \quad \text{otherwise} 
+  \end{cases}
+\$$
