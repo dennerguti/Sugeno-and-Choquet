@@ -41,7 +41,7 @@ $$
 
 ## Harmonic Mean
 $$
-\ THP (x, y) =
+\ HS (x, y) =
   \begin{cases}
     0       & \quad \text{if x = y = 0} \\
     \frac{{2}}{{ \frac{{1}}{{x}} +  \frac{{1}}{{y}}}}  & \quad \text{otherwise} 
